@@ -1,20 +1,28 @@
 package lesson20241031;
 
-public class Human {
-
-    private String name;
+public class Human extends Creature {
 
     public Human(String name) {
-        this.name = name;
+        super(name);
     }
 
-    public void feedCat(Cat cat) {
-        System.out.println("Human " + name + " feeds the cat " + cat.getName());
-        cat.feed();
+    @Override
+    public void sayHello() {
+        System.out.println("Hello! I'm human. My name is " + getName());
     }
-    public void feedCat(Cat[] cats){
-        for (Cat cat : cats) {
-            feedCat(cat);
+
+    public void feedAnimal(Animal animal) {
+        System.out.println("Human " + getName() + " feeds the animal " + animal.getName());
+        animal.feed();
+    }
+    public void feedAnimal(Animal[] animals){
+        for (Animal animal : animals) {
+            feedAnimal(animal);
         }
+    }
+
+    public void walk(Animal animal) {
+        System.out.println("Human " + getName() + " walks with " + animal.getName());
+        animal.setHungry(true);
     }
 }

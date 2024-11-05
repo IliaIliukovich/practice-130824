@@ -1,8 +1,7 @@
 package lesson20241031;
 
-public class Robot {
+public class Robot extends Creature{
 
-    private String name;
     private String description;
     private int version;
     private static int totalRobotCount = 0;
@@ -10,10 +9,15 @@ public class Robot {
     private static final int ROBOT_DEFAULT_VERSION = 1;
 
     public Robot(String name, String description) {
-        this.name = name;
+        super(name);
         this.description = description;
         this.version = ROBOT_DEFAULT_VERSION;
         totalRobotCount++;
+    }
+
+    @Override
+    public void sayHello() {
+        System.out.println("Hello! I'm robot. My name is " + getName());
     }
 
     public void printCurrentRobotInfo() {
@@ -27,9 +31,10 @@ public class Robot {
     @Override
     public String toString() {
         return "Robot{" +
-                "name='" + name + '\'' +
+                "name='" + getName() + '\'' +
                 ", description='" + description + '\'' +
                 ", version=" + version +
                 '}';
     }
+
 }
