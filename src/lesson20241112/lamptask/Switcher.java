@@ -12,7 +12,7 @@ public class Switcher {
         tableLamp.on(true);
     }
 
-    public void swithOff() {
+    public void switchOff() {
         tableLamp.on(false);
     }
 }

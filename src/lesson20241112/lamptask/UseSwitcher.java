@@ -9,7 +9,7 @@ public class UseSwitcher {
         switcher.switchOn();
         tableLamp.checkState();
 
-        switcher.swithOff();
+        switcher.switchOff();
         tableLamp.checkState();
 
         LightBulb lightBulb = new LightBulb();
