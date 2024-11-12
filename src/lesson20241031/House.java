@@ -4,6 +4,7 @@ import lesson20241031.creatures.Cat;
 import lesson20241031.creatures.Dog;
 import lesson20241031.creatures.Human;
 import lesson20241031.creatures.Robot;
+import lesson20241031.skills.Walkable;
 
 public class House {
 
@@ -38,6 +39,16 @@ public class House {
 
         robot1.walk(dog);
         robot1.catchMouse();
+
+        boolean condition = true;
+        Walkable walkable;
+        if (condition) {
+            walkable = human;
+        } else {
+            walkable = robot1;
+
+        }
+        walkable.walk(dog);
     }
 
 
