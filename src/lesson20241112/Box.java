@@ -25,11 +25,12 @@ public class Box {
     }
 
     public Box makeShallowCopy() {
-        return null;
+        return new Box(this.cat);
     }
 
     public Box makeDeepCopy() {
-        return null;
+        Cat newCat = new Cat(this.cat.getName(), this.cat.getAge());
+        return new Box(newCat);
     }
 
 
@@ -44,5 +45,13 @@ public class Box {
 
         System.out.println(box1 == box2);
         System.out.println(box1.equals(box2));
+
+        Box newBox = box2.makeShallowCopy();
+        System.out.println(box2.equals(newBox));
+        System.out.println(box2.cat == newBox.cat);
+
+        Box newDeepBoxCopy = box2.makeDeepCopy();
+        System.out.println(box2.equals(newDeepBoxCopy));
+        System.out.println(box2.cat == newDeepBoxCopy.cat);
     }
 }
