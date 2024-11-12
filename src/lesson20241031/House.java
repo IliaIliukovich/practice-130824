@@ -1,5 +1,10 @@
 package lesson20241031;
 
+import lesson20241031.creatures.Cat;
+import lesson20241031.creatures.Dog;
+import lesson20241031.creatures.Human;
+import lesson20241031.creatures.Robot;
+
 public class House {
 
     public static void main(String[] args) {
@@ -26,6 +31,13 @@ public class House {
         System.out.println(dog);
         human.feedAnimal(dog);
 
+        // Part 3
+        human.play(robot1);
+        tom.play(dog);
+        dog.play(tom);
+
+        robot1.walk(dog);
+        robot1.catchMouse();
     }
 
 

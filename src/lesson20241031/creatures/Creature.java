@@ -1,4 +1,4 @@
-package lesson20241031;
+package lesson20241031.creatures;
 
 public abstract class Creature {
 
@@ -9,6 +9,10 @@ public abstract class Creature {
     }
 
     public abstract void sayHello();
+
+    public void play(Creature another){
+        System.out.println(this.getName() + " plays with " + another.getName());
+    }
 
     public String getName() {
         return name;

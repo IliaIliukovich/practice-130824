@@ -1,6 +1,8 @@
-package lesson20241031;
+package lesson20241031.creatures;
 
-public class Human extends Creature {
+import lesson20241031.skills.Walkable;
+
+public class Human extends Creature implements Walkable {
 
     public Human(String name) {
         super(name);
@@ -21,6 +23,7 @@ public class Human extends Creature {
         }
     }
 
+    @Override
     public void walk(Animal animal) {
         System.out.println("Human " + getName() + " walks with " + animal.getName());
         animal.setHungry(true);

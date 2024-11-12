@@ -1,6 +1,9 @@
-package lesson20241031;
+package lesson20241031.creatures;
 
-public class Robot extends Creature{
+import lesson20241031.skills.CatchingSkills;
+import lesson20241031.skills.Walkable;
+
+public class Robot extends Creature implements Walkable, CatchingSkills {
 
     private String description;
     private int version;
@@ -37,4 +40,14 @@ public class Robot extends Creature{
                 '}';
     }
 
+    @Override
+    public void walk(Animal animal) {
+        System.out.println(getName() + " walks with " + animal.getName());
+        animal.setHungry(true);
+    }
+
+    @Override
+    public void catchMouse() {
+        System.out.println("Robot " + getName() + " caught a mouse");
+    }
 }

@@ -1,4 +1,4 @@
-package lesson20241031;
+package lesson20241031.creatures;
 
 public abstract class Animal extends Creature {
 

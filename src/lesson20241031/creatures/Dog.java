@@ -1,4 +1,4 @@
-package lesson20241031;
+package lesson20241031.creatures;
 
 public class Dog extends Animal {
 
@@ -14,5 +14,14 @@ public class Dog extends Animal {
 
     public void bark() {
         System.out.println("Gav! Gav!");
+    }
+
+    @Override
+    public void play(Creature another) {
+        if (another instanceof Cat) {
+            bark();
+        } else {
+            super.play(another);
+        }
     }
 }
