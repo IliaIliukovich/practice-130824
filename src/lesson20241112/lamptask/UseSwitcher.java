@@ -13,7 +13,15 @@ public class UseSwitcher {
         tableLamp.checkState();
 
         LightBulb lightBulb = new LightBulb();
-//        Switcher switcher2 = new Switcher(lightBulb); // TODO
+        Switcher switcher2 = new Switcher(lightBulb);
+
+        switcher2.switchOn();
+        lightBulb.checkState();
+
+        switcher2.switchOff();
+        lightBulb.checkState();
+
+        lightBulb.defaultMethod();
     }
 
 

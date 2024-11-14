@@ -2,17 +2,17 @@ package lesson20241112.lamptask;
 
 public class Switcher {
 
-    private TableLamp tableLamp;
+    private Switchable device;
 
-    public Switcher(TableLamp tableLamp) {
-        this.tableLamp = tableLamp;
+    public Switcher(Switchable device) {
+        this.device = device;
     }
 
     public void switchOn() {
-        tableLamp.on(true);
+        device.on(true);
     }
 
     public void switchOff() {
-        tableLamp.on(false);
+        device.on(false);
     }
 }
