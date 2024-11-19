@@ -5,3 +5,9 @@ Input:
 	data = {"One", "Two", "Three"}
 Result:
 	data = {"Three", "Two", "One"}
+3. Имеется заданный список имен студентов:
+   List<String> names = Arrays.asList("Mary", "Jane", "Tom", "Tim", "Mark", "Ann", null, "");
+   - Написать метод findNameStartingWith(), который бы возвращал список имен, начинающихся на определенную букву
+4. Составить список студентов, распределенных по отдельным классам List<List<Student>> studentGrades
+   - Написать метод countTotalAmount(), который считает общее число студентов
+   - Написать метод countAmountWithName(String name), который считает количество студентов в школе с заданным именем name.
