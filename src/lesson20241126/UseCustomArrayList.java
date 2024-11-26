@@ -11,6 +11,12 @@ public class UseCustomArrayList {
             System.out.println(element);
         }
 
+        Iterator<String> reversed = customArrayList.reverseIterator();
+        while (reversed.hasNext()) {
+            System.out.println(reversed.next());
+//            reversed.remove();
+        }
+
         // A B C D E
         // E D C B A
 

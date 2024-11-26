@@ -17,6 +17,10 @@ public class CustomArrayList implements Iterable<String>{
         return new MyIterator();
     }
 
+    public Iterator<String> reverseIterator() {
+        return new MyReverseIterator();
+    }
+
     private class MyIterator implements Iterator<String> {
 
         int currentIndex = 0;
@@ -32,6 +36,24 @@ public class CustomArrayList implements Iterable<String>{
                 throw new NoSuchElementException("No more elements");
             }
             return data[currentIndex++];
+        }
+    }
+
+    private class MyReverseIterator implements Iterator<String> {
+
+        int currentIndex = data.length - 1;
+
+        @Override
+        public boolean hasNext() {
+            return currentIndex >= 0;
+        }
+
+        @Override
+        public String next() {
+            if (!hasNext()) {
+                throw new NoSuchElementException("No more elements");
+            }
+            return data[currentIndex--];
         }
     }
 }
