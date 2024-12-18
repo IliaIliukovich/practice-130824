@@ -1,24 +1,24 @@
 package lesson20241212;
 
-public class Recktangle extends Figure {
+public class Rectangle extends Figure {
 
     private double a;
     private double b;
 
-    public Recktangle(double a, double b) {
+    public Rectangle(double a, double b) {
         this.a = a;
         this.b = b;
     }
 
     @Override
-    double getSquare() {
+    public double getSquare() {
         return a * b;
     }
 
 
     @Override
     public String toString() {
-        return "Recktangle{" +
+        return "Rectangle{" +
                 "a=" + a +
                 ", b=" + b +
                 '}';
