@@ -1,0 +1,12 @@
+1. Создать Consumer, который принимает числа и печатает четные числа в поток System.out, а нечетные числа в System.err.
+2. Создать BiFunction, которая возводит первый аргумент типа int в степень второго аргумента типа int
+3. Создать Supplier randomJoke, который выдает пользователю случайный анекдот из заготовленного исходного списка анекдотов.
+4. Создать Predicate isYellowMonkey, который проверяет, желтого ли цвета обезьянка Monkey.
+
+() -> ()
+
+() -> data --- Supplier
+(data) -> () ---- Consumer
+(data1) -> (data2) --- Function --- Operator
+(data1, data2) --> (data3) --- BiFunction --- BinaryOperator
+(data) ---> boolean ---- Predicate
