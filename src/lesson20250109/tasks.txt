@@ -1,0 +1,21 @@
+1. Из списка имен вывести первое по алфавиту, предпоследнее по алфавиту
+2. Посчитать количество чисел от 1 до 1000, которые делятся на 7.
+3. Посчитать сумму квадратов чисел от 1 до 100
+4. Дан список кошек
+class Cat {
+        private String name;
+        private int age;
+        private String colour;
+        private boolean isHungry;
+}
+Cat cat1 = new Cat("Tom", 2, "black", true);
+Cat cat2 = new Cat("Mikky", 1, "white", false);
+Cat cat3 = new Cat("Vasya", 3, "white", true);
+Cat cat4 = new Cat("Steve", 1, "grey", false);
+Cat cat5 = new Cat("Bob", 2, "black", true);
+List<Cat> catList = Arrays.asList(cat1, cat2, cat3, cat4, cat5);
+
+    a. Получить Map<String, Boolean> имя / информация, голодна ли кошка
+    b. Получить Map<String, Long> цвет / количество кошек данного цвета
+    c. Получить Map<String, Set<String>> цвет / список имен кошек данного цвета
+    d. Получить Map<Integer, Integer> возраст / количество голодных кошек данного возраста
