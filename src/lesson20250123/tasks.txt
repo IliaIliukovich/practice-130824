@@ -1,0 +1,16 @@
+1. Имеется несколько экземпляров класса Book
+public class Book {
+    private String title;
+    private String author;
+    private double price;
+    private int bookCount;
+}
+Сохранить их в файл. Считать из файла. (Две книги в один файл).
+2. Имеется класс Cat, в котором есть имя и возраст
+   class Cat
+   	String name;
+   	int age;
+   Имеется класс Box, в котором есть поле Cat:
+   class Box
+   	Cat cat;
+- реализовать поверхностное и глубокое копирование объекта box через Clonable
