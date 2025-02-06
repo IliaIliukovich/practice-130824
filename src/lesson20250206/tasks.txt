@@ -4,4 +4,4 @@ Array1: [1, 2, 5, 5, 8, 9, 7, 10]
 Array2: [1, 0, 6, 15, 6, 4, 7, 0]
 example expected:
 [1,7]
-2. Напишите тест для метода findTopKByPriorityQueue() в классе lesson20241210.TopKTask
+2. Напишите тест для метода findTopKByPriorityQueueOptimized() в классе lesson20241210.TopKTask
